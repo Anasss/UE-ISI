@@ -1,0 +1,14 @@
+drop package "CG$RIC_POSITIONNEMENT";
+drop package "CG$RECUEIL_INDIVIDUEL_COMPETEN";
+drop package "CG$JOURNAL_SUIVI_PERSONNEL";
+drop package "CG$POSITIONNEMENT";
+drop package "CG$SUIVI_PERSONNEL_COMPETENCE";
+drop package "CG$COMPETENCE_TRANSVERSALE";
+drop package "CG$FAMILLE_COMPETENCE_TRANSVER";
+drop package "CG$COMPETENCE";
+drop package "CG$CAPACITE";
+drop package "CG$DOMAINE_CONNAISSANCE";
+drop package "CG$FAMILLE_COMPETENCE";
+drop package "CG$DOMAINE_COMPETENCE";
+
+

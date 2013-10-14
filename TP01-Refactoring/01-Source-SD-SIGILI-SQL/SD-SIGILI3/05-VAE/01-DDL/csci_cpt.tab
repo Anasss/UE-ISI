@@ -1,0 +1,15 @@
+-- C:\Documents and Settings\rosec\Bureau\ddl_cpt\csci_cpt.tab
+--
+-- Generated for Oracle 10g on Tue Mar 27  14:10:25 2007 by Server Generator 10.1.2.6.18
+ 
+
+PROMPT Altering Table 'SUIVI_PERSONNEL_COMPETENCE' 
+ALTER TABLE SUIVI_PERSONNEL_COMPETENCE 
+ ADD (CODE_UTILISATEUR VARCHAR2(240)
+ )
+/
+
+COMMENT ON COLUMN SUIVI_PERSONNEL_COMPETENCE.CODE_UTILISATEUR IS 'Code identifiant un utilisateur'
+/
+
+

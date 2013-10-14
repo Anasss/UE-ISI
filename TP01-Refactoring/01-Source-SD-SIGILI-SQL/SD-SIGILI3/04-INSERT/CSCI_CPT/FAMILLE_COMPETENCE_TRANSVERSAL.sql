@@ -1,0 +1,2 @@
+-- INSERTING into FAMILLE_COMPETENCE_TRANSVERSAL
+-- Insert into "FAMILLE_COMPETENCE_TRANSVERSAL" ("CODE_MCP","DESIGNATION","ORDRE","DESCRIPTION") values ('MOD01','ma famille de competence tranversale','1','test');

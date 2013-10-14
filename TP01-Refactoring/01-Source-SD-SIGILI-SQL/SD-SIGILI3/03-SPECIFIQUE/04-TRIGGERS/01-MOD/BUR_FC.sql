@@ -1,0 +1,8 @@
+create or replace TRIGGER BUR_FAMILLE_COMPETENCE BEFORE UPDATE ON FAMILLE_COMPETENCE
+FOR EACH ROW
+BEGIN
+  IF (:new.id_ec != 0) THEN
+    Select 'MET' into :New.TYPE_COMPETENCE from dual;
+  END IF;
+END;
+/

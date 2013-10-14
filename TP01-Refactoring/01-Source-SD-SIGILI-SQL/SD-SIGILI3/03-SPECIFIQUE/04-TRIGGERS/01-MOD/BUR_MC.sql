@@ -1,0 +1,6 @@
+create or replace TRIGGER BUR_MODELE_COMPETENCE BEFORE UPDATE ON MODELE_COMPETENCE
+FOR EACH ROW
+BEGIN
+      Select SysDate into :New.DATE_MAJ from dual;
+END;
+/

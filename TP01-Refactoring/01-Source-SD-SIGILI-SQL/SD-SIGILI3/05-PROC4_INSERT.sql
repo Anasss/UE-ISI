@@ -1,0 +1,42 @@
+SPOOL 05-proc4_insert.lst
+
+
+PROMPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~;
+PROMPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Creation du jeu d'essai   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~;
+
+PROMPT~~~~~~~~~~~~~~~~~~~~~~~~~~ SIGILI_R2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--@@04-INSERT\SIGILI_R2\CG_REF_CODES.sql
+--@@04-INSERT\SIGILI_R2\PROMOTION.sql
+--@@04-INSERT\SIGILI_R2\COMPAGNIE.sql
+--@@04-INSERT\SIGILI_R2\ETUDIANT.sql
+--@@04-INSERT\SIGILI_R2\AUTHENTIFICATION.sql
+--@@04-INSERT\SIGILI_R2\CADRE_REFERENT.sql
+
+
+PROMPT~~~~~~~~~~~~~~~~~~~~~~~~~~ CSCI_CPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@@04-INSERT\CSCI_CPT\MODELE_COMPETENCE.sql
+@@04-INSERT\CSCI_CPT\DOMAINE_COMPETENCE.sql
+@@04-INSERT\CSCI_CPT\FAMILLE_COMPETENCE.sql
+@@04-INSERT\CSCI_CPT\CAPACITE.sql
+@@04-INSERT\CSCI_CPT\DOMAINE_CONNAISSANCE.sql
+@@04-INSERT\CSCI_CPT\COMPETENCE.sql
+@@04-INSERT\CSCI_CPT\FAMILLE_COMPETENCE_TRANSVERSAL.sql
+@@04-INSERT\CSCI_CPT\COMPETENCE_TRANSVERSALE.sql
+@@04-INSERT\CSCI_CPT\CT_FC.sql
+@@04-INSERT\CSCI_CPT\SUIVI_PERSONNEL_COMPETENCE.sql
+@@04-INSERT\CSCI_CPT\POSITIONNEMENT.sql
+@@04-INSERT\CSCI_CPT\JOURNAL_SUIVI_PERSONNEL.sql
+@@04-INSERT\CSCI_CPT\DEMANDE_RIC.sql
+@@04-INSERT\CSCI_CPT\RECUEIL_INDIVIDUEL_COMPETENCE.sql
+@@04-INSERT\CSCI_CPT\RIC_POSITIONNEMENT.sql
+
+PROMPT~~~~~~~~~~~~~~~~~~~ Modifications des sequences ~~~~~~~~~~~~~~~~~~~~~~
+
+@@04-INSERT\Sequences.sql
+
+
+SPOOL OFF
+
+COMMIT;

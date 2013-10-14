@@ -1,0 +1,2 @@
+Insert into "PROMOTION" ("ANNEE_PRO","SIGLE_PRO","NB_ETU_SOUHAITE","ETAT_PRESELECTION","DATE_RENTREE","LIEU_RENTREE","DATE_REPONSE_LP","COMMENTAIRE","DATE_REPONSE_LALP","PROCESSUS_STAGE","NO_BAREME","NO_EVALUATION") 
+values ('2006-2007','CILI5',12,'TER',to_date('2006-09-18','yyyy-mm-dd'),'LC117A',to_date('2006-07-12','yyyy-mm-dd'),null,to_date('2006-08-13','yyyy-mm-dd'),'EC',null,null);

@@ -1,0 +1,25 @@
+drop procedure CREER_RIC;
+drop procedure CREER_SPC;
+drop procedure CREER_SPC_POS_CAP;
+drop procedure CREER_SPC_POS_CPT;
+drop procedure CREER_SPC_POS_CPTT;
+drop procedure CREER_SPC_POS_FC;
+drop procedure DUPLICATION;
+drop procedure EDITER_MC;
+drop procedure EDITER_RIC;
+drop procedure EDITER_SPC;
+drop procedure RIC_TEMP_IMPL_CAP;
+drop procedure RIC_TEMP_IMPL_CPT;
+drop procedure RIC_TEMP_IMPL_CPTT;
+drop procedure RIC_TEMP_IMPL_FC;
+drop procedure RIC02_TEMP_IMPL;
+drop procedure STAT01_NBPOSITIONNEMENT_CAP;
+drop procedure STAT01_NBPOSITIONNEMENT_CPT;
+drop procedure STAT01_NBPOSITIONNEMENT_CPTT;
+drop procedure STAT01_NBPOSITIONNEMENT_FC;
+drop procedure SUPPRESSION_MODELE_COMPETENCE;
+drop procedure SUPPRESSION_SPC;
+drop procedure maj_mod_comp;
+drop procedure import_mc;
+
+drop function GET_AUTHORISATIONCREERRIC;

@@ -1,0 +1,720 @@
+
+Reconcile Report: C:\Documents and Settings\rosec\Bureau\ddl_cpt\csci_adm.lis
+
+Generated on Tue Mar 27  14:06:31 2007 by Server Generator 10.1.2.6.18
+
+
+======                                  ========                        ================                          ==============
+Object                                  Property                        Repository Value                          Database Value
+======                                  ========                        ================                          ==============
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+Object                                  Property                        Repository Value                          Database Value
+------                                  --------                        ----------------                          --------------
+Table AUTHENTIFICATION                                                                                                          
+                                     Object Type                                                                                
+                                Data Persistence                               Permanent                               Permanent
+                                         Cluster                                                                                
+                                      Index Only                                      No                                      No
+
+                                          Cached                                                                        No Cache
+                            Initial Transactions                                                                               1
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+                                         Comment                                                                                
+Column LOGIN                                                                    - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                       8                                       8
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                     Yes
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment Nom d'utilisateur pour se connecter ... Nom d'utilisateur pour se connecter ...
+Column CODE_UTILISATEUR                                                                                      * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment         Code identifiant un utilisateur                                        
+Column NO_ENSEIGNANT                                                            - same -                                - same -
+                                        Datatype                                  NUMBER                                  NUMBER
+                                      Max Length                                       5                                       5
+                                           Scale                                                                                
+                                       Mandatory                                      No                                      No
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment           Numéro unique de l'enseignant           Numéro unique de l'enseignant
+Column NO_ENTREPRISE                                                            - same -                                - same -
+                                        Datatype                                 INTEGER                                  NUMBER
+                                      Max Length                                                                                
+                                           Scale                                                                                
+                                       Mandatory                                      No                                      No
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                                                                                
+Column NO_ETUDIANT_NAT                                                          - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                      50                                      50
+                                           Scale                                                                                
+                                       Mandatory                                      No                                      No
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment           Numéro National de l'étudiant           Numéro National de l'étudiant
+Column PASSWORD                                                                 - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                      50                                      50
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                     Yes
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment Not de passe de l'utilisateur pour s... Not de passe de l'utilisateur pour s...
+Column TYPE_AUTHENTIFICATION                                                    - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                       3                                       3
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                     Yes
+                                   Default Value                                                                                
+                                          Domain                   TYPE_AUTHENTIFICATION                                         ***
+                                         Comment Représente le type de personne conne... Représente le type de personne conne...
+
+Index AUT_AAU_FK_I                                                                                           * NOT IN DATABASE * ***
+                                          Unique                                      No                                        
+                                          Global                                      No                                        
+                                       Bitmapped                                      No                                        
+                              Compute Statistics                                      No                                        
+                                  Index Reversed                                      No                                        
+                                          Nosort                                      No                                        
+
+
+
+                            Initial Transactions                                                                                
+                                Max Transactions                                                                                
+                                    Percent Free                                                                                
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                                
+                                     Next Extent                                                                                
+                                     Min Extents                                                                                
+                                     Max Extents                                                                                
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                                
+                                        Parallel                                      No                                        
+
+                                Index Entry Type                            COLUMN BASED                            COLUMN BASED
+                                     Index Entry                        CODE_UTILISATEUR                        CODE_UTILISATEUR
+Index AUT_ENT_FK_I                                                              - same -                                - same -
+                                          Unique                                      No                                      No
+                                          Global                                      No                                      No
+                                       Bitmapped                                      No                                      No
+                              Compute Statistics                                      No                    * NOT DETERMINABLE *
+                                  Index Reversed                                      No                                      No
+                                          Nosort                                      No                    * NOT DETERMINABLE *
+
+
+
+                            Initial Transactions                                                                               2
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+
+                                Index Entry Type                            COLUMN BASED                            COLUMN BASED
+                                     Index Entry                           NO_ENTREPRISE                           NO_ENTREPRISE
+Index AUT_ETU_FK_I                                                              - same -                                - same -
+                                          Unique                                      No                                      No
+                                          Global                                      No                                      No
+                                       Bitmapped                                      No                                      No
+                              Compute Statistics                                      No                    * NOT DETERMINABLE *
+                                  Index Reversed                                      No                                      No
+                                          Nosort                                      No                    * NOT DETERMINABLE *
+
+
+
+                            Initial Transactions                                                                               2
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+
+                                Index Entry Type                            COLUMN BASED                            COLUMN BASED
+                                     Index Entry                         NO_ETUDIANT_NAT                         NO_ETUDIANT_NAT
+Index AUT_ENS_FK_I                                                              - same -                                - same -
+                                          Unique                                      No                                      No
+                                          Global                                      No                                      No
+                                       Bitmapped                                      No                                      No
+                              Compute Statistics                                      No                    * NOT DETERMINABLE *
+                                  Index Reversed                                      No                                      No
+                                          Nosort                                      No                    * NOT DETERMINABLE *
+
+
+
+                            Initial Transactions                                                                               2
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+
+                                Index Entry Type                            COLUMN BASED                            COLUMN BASED
+                                     Index Entry                           NO_ENSEIGNANT                           NO_ENSEIGNANT
+Primary Key AUT_PK                                                              - same -                                - same -
+                                         Enabled                                     Yes                                     Yes
+                                        Deferred                                      No                                      No
+                                       Immediate                                      No                                      No
+                                 Exception Table                                                            * NOT DETERMINABLE *
+                                      Key Column                                   LOGIN                                   LOGIN
+
+Index AUT_PK                                                                                                                    
+                                          Unique                                     Yes                                     Yes
+                                          Global                                      No                                      No
+                                       Bitmapped                                      No                                      No
+                              Compute Statistics                                      No                    * NOT DETERMINABLE *
+                                         Reverse                                      No                                      No
+                                          Nosort                                      No                    * NOT DETERMINABLE *
+
+
+
+                            Initial Transactions                                                                               2
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+
+Foreign Key AUT_AAU_FK                                                                                       * NOT IN DATABASE * ***
+                                         Enabled                                     Yes                                        
+                                        Deferred                                      No                                        
+                                       Immediate                                      No                                        
+                                  Cascade Delete                                RESTRICT                                        
+                                  Cascade Update                                RESTRICT                                        
+                                 Exception Table                                                                                
+                                      Join Table                       AUTRE_UTILISATEUR                                        
+                                      Key Column                        CODE_UTILISATEUR                                        
+
+                               Referenced Column      AUTRE_UTILISATEUR.CODE_UTILISATEUR                                        
+
+Foreign Key AUT_ETU_FK                                                          - same -                                - same -
+                                         Enabled                                     Yes                                     Yes
+                                        Deferred                                      No                                      No
+                                       Immediate                                      No                                      No
+                                  Cascade Delete                                RESTRICT                                RESTRICT
+                                  Cascade Update                                RESTRICT                                RESTRICT
+                                 Exception Table                                                            * NOT DETERMINABLE *
+                                      Join Table                                ETUDIANT                                ETUDIANT
+                                      Key Column                         NO_ETUDIANT_NAT                         NO_ETUDIANT_NAT
+
+                               Referenced Column                ETUDIANT.NO_ETUDIANT_NAT                ETUDIANT.NO_ETUDIANT_NAT
+
+Foreign Key AUT_ENT_FK                                                          - same -                                - same -
+                                         Enabled                                     Yes                                     Yes
+                                        Deferred                                      No                                      No
+                                       Immediate                                      No                                      No
+                                  Cascade Delete                                RESTRICT                                RESTRICT
+                                  Cascade Update                                RESTRICT                                RESTRICT
+                                 Exception Table                                                            * NOT DETERMINABLE *
+                                      Join Table                              ENTREPRISE                              ENTREPRISE
+                                      Key Column                           NO_ENTREPRISE                           NO_ENTREPRISE
+
+                               Referenced Column                ENTREPRISE.NO_ENTREPRISE                ENTREPRISE.NO_ENTREPRISE
+
+Foreign Key AUT_ENS_FK                                                          - same -                                - same -
+                                         Enabled                                     Yes                                     Yes
+                                        Deferred                                      No                                      No
+                                       Immediate                                      No                                      No
+                                  Cascade Delete                                RESTRICT                                RESTRICT
+                                  Cascade Update                                RESTRICT                                RESTRICT
+                                 Exception Table                                                            * NOT DETERMINABLE *
+                                      Join Table                              ENSEIGNANT                              ENSEIGNANT
+                                      Key Column                           NO_ENSEIGNANT                           NO_ENSEIGNANT
+
+                               Referenced Column                ENSEIGNANT.NO_ENSEIGNANT                ENSEIGNANT.NO_ENSEIGNANT
+
+
+Check Constraint CK_AUTHENTIFICATION                                       * DIFFERENT *                           * DIFFERENT *
+                                         Enabled                                     Yes                                     Yes
+                                      Expression         ((NO_ETUDIANT_NAT IS NULL)  ...          ((NO_ETUDIANT_NAT IS NULL) ... ***
+                                 Exception Table                                                            * NOT DETERMINABLE *
+Trigger CG$AIS_AUTHENTIFICATION                                    * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                           AFTER
+                                       On Delete                                                                              No
+                                       On Insert                                                                             Yes
+                                       On Update                                                                              No
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$AUS_AUTHENTIFICATION                                    * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                           AFTER
+                                       On Delete                                                                              No
+                                       On Insert                                                                              No
+                                       On Update                                                                             Yes
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$ADS_AUTHENTIFICATION                                    * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                           AFTER
+                                       On Delete                                                                             Yes
+                                       On Insert                                                                              No
+                                       On Update                                                                              No
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$BDR_AUTHENTIFICATION                                    * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                             Yes
+                                       On Insert                                                                              No
+                                       On Update                                                                              No
+                                           Level                                                                             ROW
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$BIR_AUTHENTIFICATION                                    * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                              No
+                                       On Insert                                                                             Yes
+                                       On Update                                                                              No
+                                           Level                                                                             ROW
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$BDS_AUTHENTIFICATION                                    * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                             Yes
+                                       On Insert                                                                              No
+                                       On Update                                                                              No
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                        BEGIN...
+Trigger CG$BIS_AUTHENTIFICATION                                    * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                              No
+                                       On Insert                                                                             Yes
+                                       On Update                                                                              No
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                        BEGIN...
+Trigger CG$BUR_AUTHENTIFICATION                                    * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                              No
+                                       On Insert                                                                              No
+                                       On Update                                                                             Yes
+                                           Level                                                                             ROW
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$BUS_AUTHENTIFICATION                                    * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                              No
+                                       On Insert                                                                              No
+                                       On Update                                                                             Yes
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                        BEGIN...
+                                    Snapshot Log                                      No                                      No
+
+
+
+                                               -------------------------------------
+                                               Table AUTHENTIFICATION Differences: 5
+                                               -------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+Object                                  Property                        Repository Value                          Database Value
+------                                  --------                        ----------------                          --------------
+Table AUTRE_UTILISATEUR                                                                                      * NOT IN DATABASE * ***
+                                     Object Type                                                                                
+                                Data Persistence                               Permanent                                        
+                                         Cluster                                                                                
+                                      Index Only                                      No                                        
+
+                                          Cached                                                                                
+                            Initial Transactions                                                                                
+                                Max Transactions                                                                                
+                                    Percent Free                                                                                
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                                
+                                     Next Extent                                                                                
+                                     Min Extents                                                                                
+                                     Max Extents                                                                                
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                                
+                                        Parallel                                      No                                        
+                                         Comment                                                                                
+Column CODE_UTILISATEUR                                                                                      * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment         Code identifiant un utilisateur                                        
+Column NOM                                                                                                   * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                    Nom de l'utilisateur                                        
+Column PRENOM                                                                                                * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                 Prenom de l'utilisateur                                        
+Column TELEPHONE                                                                                             * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment             Téléphone  de l'utilisateur                                        
+Column TYPE_UTILISATEUR                                                                                      * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                       3                                        
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                        
+                                   Default Value                                                                                
+                                          Domain                        TYPE_UTILISATEUR                                        
+                                         Comment                   Type de l'utilisateur                                        
+Column ADRESSE                                                                                               * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment               Adresse  de l'utilisateur                                        
+Column CP                                                                                                    * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment           Code postal  de l'utilisateur                                        
+Column EMAIL                                                                                                 * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                 Email  de l'utilisateur                                        
+Column ENTREPRISE_ADRESSE                                                                                    * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment Adresse de l'entreprise de l'utilisa...                                        
+Column ENTREPRISE_CONTACT                                                                                    * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment          Nom du contact de l'entreprise                                        
+Column ENTREPRISE_CP                                                                                         * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment             Code postal de l'entreprise                                        
+Column ENTREPRISE_NOM                                                                                        * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                     Nom de l'entreprise                                        
+Column ENTREPRISE_PAYS                                                                                       * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                    Pays de l'entreprise                                        
+Column ENTREPRISE_VILLE                                                                                      * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                   Ville de l'entreprise                                        
+Column PAYS                                                                                                  * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment               Pays de  de l'utilisateur                                        
+Column VILLE                                                                                                 * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                 Ville  de l'utilisateur                                        
+
+Primary Key AAU_PK                                                                                           * NOT IN DATABASE * ***
+                                         Enabled                                     Yes                                        
+                                        Deferred                                      No                                        
+                                       Immediate                                      No                                        
+                                 Exception Table                                                                                
+                                      Key Column                        CODE_UTILISATEUR                                        
+
+Index AAU_PK                                                                                                 * NOT IN DATABASE * ***
+                                          Unique                                     Yes                                        
+                                          Global                                      No                                        
+                                       Bitmapped                                      No                                        
+                              Compute Statistics                                      No                                        
+                                         Reverse                                      No                                        
+                                          Nosort                                      No                                        
+
+
+
+                            Initial Transactions                                                                                
+                                Max Transactions                                                                                
+                                    Percent Free                                                                                
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                                
+                                     Next Extent                                                                                
+                                     Min Extents                                                                                
+                                     Max Extents                                                                                
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                                
+                                        Parallel                                      No                                        
+
+
+                                    Snapshot Log                                      No                                      No
+
+
+
+                                               --------------------------------------
+                                               Table AUTRE_UTILISATEUR Differences: 1
+                                               --------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+Object                                  Property                        Repository Value                          Database Value
+------                                  --------                        ----------------                          --------------
+Table CG_REF_CODES                                                                                                              
+                                     Object Type                                                                                
+                                Data Persistence                               Permanent                               Permanent
+                                         Cluster                                                                                
+                                      Index Only                                      No                                      No
+
+                                          Cached                                                                        No Cache
+                            Initial Transactions                                                                               1
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+                                         Comment                                                                                
+Column RV_DOMAIN                                                                - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                     100                                     100
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                     Yes
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                                                                                
+Column RV_LOW_VALUE                                                             - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                     240                                     240
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                     Yes
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                                                                                
+Column RV_HIGH_VALUE                                                            - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                     240                                     240
+                                           Scale                                                                                
+                                       Mandatory                                      No                                      No
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                                                                                
+Column RV_ABBREVIATION                                                          - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                     240                                     240
+                                           Scale                                                                                
+                                       Mandatory                                      No                                      No
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                                                                                
+Column RV_MEANING                                                               - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                     240                                     240
+                                           Scale                                                                                
+                                       Mandatory                                      No                                      No
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                                                                                
+
+Index X_CG_REF_CODES_1                                                          - same -                                - same -
+                                          Unique                                      No                                      No
+                                          Global                                      No                                      No
+                                       Bitmapped                                      No                                      No
+                              Compute Statistics                                      No                    * NOT DETERMINABLE *
+                                  Index Reversed                                      No                                      No
+                                          Nosort                                      No                    * NOT DETERMINABLE *
+
+
+
+                            Initial Transactions                                                                               2
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+
+                                Index Entry Type                            COLUMN BASED                            COLUMN BASED
+                                     Index Entry                               RV_DOMAIN                               RV_DOMAIN
+
+                                Index Entry Type                            COLUMN BASED                            COLUMN BASED
+                                     Index Entry                            RV_LOW_VALUE                            RV_LOW_VALUE
+
+
+Trigger CG$AIR_CG_REF_CODES                                        * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                           AFTER
+                                       On Delete                                                                              No
+                                       On Insert                                                                             Yes
+                                       On Update                                                                              No
+                                           Level                                                                             ROW
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                        BEGIN...
+Trigger CG$AUR_CG_REF_CODES                                        * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                           AFTER
+                                       On Delete                                                                              No
+                                       On Insert                                                                              No
+                                       On Update                                                                             Yes
+                                           Level                                                                             ROW
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                        BEGIN...
+Trigger CG$ADR_CG_REF_CODES                                        * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                           AFTER
+                                       On Delete                                                                             Yes
+                                       On Insert                                                                              No
+                                       On Update                                                                              No
+                                           Level                                                                             ROW
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                        BEGIN...
+                                    Snapshot Log                                      No                                      No
+
+
+
+                                                 ---------------------------------
+                                                 Table CG_REF_CODES Differences: 0
+                                                 ---------------------------------
+
+
+====================================================================================================================================
+                                                       Total Differences: 18
+====================================================================================================================================

@@ -1,0 +1,365 @@
+
+Reconcile Report: C:\Documents and Settings\rosec\Bureau\ddl_cpt\csci_cpt.lis
+
+Generated on Tue Mar 27  14:10:24 2007 by Server Generator 10.1.2.6.18
+
+
+======                                  ========                        ================                          ==============
+Object                                  Property                        Repository Value                          Database Value
+======                                  ========                        ================                          ==============
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+Object                                  Property                        Repository Value                          Database Value
+------                                  --------                        ----------------                          --------------
+Table SUIVI_PERSONNEL_COMPETENCE                                                                                                
+                                     Object Type                                                                                
+                                Data Persistence                               Permanent                               Permanent
+                                         Cluster                                                                                
+                                      Index Only                                      No                                      No
+
+                                          Cached                                                                        No Cache
+                            Initial Transactions                                                                               1
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+                                         Comment                                                                                
+Column ID_SPC                                                                   - same -                                - same -
+                                        Datatype                                  NUMBER                                  NUMBER
+                                      Max Length                                      10                                      10
+                                           Scale                                       0                                        
+                                       Mandatory                                     Yes                                     Yes
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment                                                                                
+Column CODE_MCP                                                                 - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                       8                                       8
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                     Yes
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment identifiant unique du modèle de comp... identifiant unique du modèle de comp...
+Column CODE_UTILISATEUR                                                                                      * NOT IN DATABASE * ***
+                                        Datatype                                VARCHAR2                                        
+                                      Max Length                                     240                                        
+                                           Scale                                                                                
+                                       Mandatory                                      No                                        
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment         Code identifiant un utilisateur                                        
+Column NO_ETUDIANT_NAT                                                          - same -                                - same -
+                                        Datatype                                VARCHAR2                                VARCHAR2
+                                      Max Length                                      50                                      50
+                                           Scale                                                                                
+                                       Mandatory                                      No                                      No
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment           Numéro National de l'étudiant           Numéro National de l'étudiant
+Column DATE_DEBUT                                                               - same -                                - same -
+                                        Datatype                                    DATE                                    DATE
+                                      Max Length                                                                                
+                                           Scale                                                                                
+                                       Mandatory                                     Yes                                     Yes
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment     date de création du suivi personnel     date de création du suivi personnel
+Column COMMENTAIRE                                                              - same -                                - same -
+                                        Datatype                                    CLOB                                    CLOB
+                                      Max Length                                                                                
+                                           Scale                                                                                
+                                       Mandatory                                      No                                      No
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment               remarque de l'utilisateur               remarque de l'utilisateur
+Column DATE_FIN                                                                 - same -                                - same -
+                                        Datatype                                    DATE                                    DATE
+                                      Max Length                                                                                
+                                           Scale                                                                                
+                                       Mandatory                                      No                                      No
+                                   Default Value                                                                                
+                                          Domain                                                                                
+                                         Comment clôture du suivi personnel de compét... clôture du suivi personnel de compét...
+
+Index SPC_ETU_FK_I                                                              - same -                                - same -
+                                          Unique                                      No                                      No
+                                          Global                                      No                                      No
+                                       Bitmapped                                      No                                      No
+                              Compute Statistics                                      No                    * NOT DETERMINABLE *
+                                  Index Reversed                                      No                                      No
+                                          Nosort                                      No                    * NOT DETERMINABLE *
+
+
+
+                            Initial Transactions                                                                               2
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+
+                                Index Entry Type                            COLUMN BASED                            COLUMN BASED
+                                     Index Entry                         NO_ETUDIANT_NAT                         NO_ETUDIANT_NAT
+Index SPC_MC_FK_I                                                               - same -                                - same -
+                                          Unique                                      No                                      No
+                                          Global                                      No                                      No
+                                       Bitmapped                                      No                                      No
+                              Compute Statistics                                      No                    * NOT DETERMINABLE *
+                                  Index Reversed                                      No                                      No
+                                          Nosort                                      No                    * NOT DETERMINABLE *
+
+
+
+                            Initial Transactions                                                                               2
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+
+                                Index Entry Type                            COLUMN BASED                            COLUMN BASED
+                                     Index Entry                                CODE_MCP                                CODE_MCP
+Index SPC_AAU_FK_I                                                                                           * NOT IN DATABASE * ***
+                                          Unique                                      No                                        
+                                          Global                                      No                                        
+                                       Bitmapped                                      No                                        
+                              Compute Statistics                                      No                                        
+                                  Index Reversed                                      No                                        
+                                          Nosort                                      No                                        
+
+
+
+                            Initial Transactions                                                                                
+                                Max Transactions                                                                                
+                                    Percent Free                                                                                
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                                
+                                     Next Extent                                                                                
+                                     Min Extents                                                                                
+                                     Max Extents                                                                                
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                                
+                                        Parallel                                      No                                        
+
+                                Index Entry Type                            COLUMN BASED                            COLUMN BASED
+                                     Index Entry                        CODE_UTILISATEUR                        CODE_UTILISATEUR
+Primary Key SC_PK                                                               - same -                                - same -
+                                         Enabled                                     Yes                                     Yes
+                                        Deferred                                      No                                      No
+                                       Immediate                                      No                                      No
+                                 Exception Table                                                            * NOT DETERMINABLE *
+                                      Key Column                                  ID_SPC                                  ID_SPC
+
+Index SC_PK                                                                                                                     
+                                          Unique                                     Yes                                     Yes
+                                          Global                                      No                                      No
+                                       Bitmapped                                      No                                      No
+                              Compute Statistics                                      No                    * NOT DETERMINABLE *
+                                         Reverse                                      No                                      No
+                                          Nosort                                      No                    * NOT DETERMINABLE *
+
+
+
+                            Initial Transactions                                                                               2
+                                Max Transactions                                                                             255
+                                    Percent Free                                                                              10
+                                    Percent Used                                                                                
+                                 Initial Extents                                                                           65536
+                                     Next Extent                                                                                
+                                     Min Extents                                                                               1
+                                     Max Extents                                                                              -1
+                                Percent Increase                                                                                
+                                       Freelists                                                                                
+                                 Freelist Groups                                                                                
+                                      Tablespace                                                                          SIGILI
+                                        Parallel                                      No                                      No
+
+Foreign Key SPC_ETU_FK                                                          - same -                                - same -
+                                         Enabled                                     Yes                                     Yes
+                                        Deferred                                      No                                      No
+                                       Immediate                                      No                                      No
+                                  Cascade Delete                                RESTRICT                                RESTRICT
+                                  Cascade Update                                RESTRICT                                RESTRICT
+                                 Exception Table                                                            * NOT DETERMINABLE *
+                                      Join Table                                ETUDIANT                                ETUDIANT
+                                      Key Column                         NO_ETUDIANT_NAT                         NO_ETUDIANT_NAT
+
+                               Referenced Column                ETUDIANT.NO_ETUDIANT_NAT                ETUDIANT.NO_ETUDIANT_NAT
+
+Foreign Key SPC_MC_FK                                                           - same -                                - same -
+                                         Enabled                                     Yes                                     Yes
+                                        Deferred                                      No                                      No
+                                       Immediate                                      No                                      No
+                                  Cascade Delete                                RESTRICT                                RESTRICT
+                                  Cascade Update                                RESTRICT                                RESTRICT
+                                 Exception Table                                                            * NOT DETERMINABLE *
+                                      Join Table                       MODELE_COMPETENCE                       MODELE_COMPETENCE
+                                      Key Column                                CODE_MCP                                CODE_MCP
+
+                               Referenced Column              MODELE_COMPETENCE.CODE_MCP              MODELE_COMPETENCE.CODE_MCP
+
+Foreign Key SPC_AAU_FK                                                                                       * NOT IN DATABASE * ***
+                                         Enabled                                     Yes                                        
+                                        Deferred                                      No                                        
+                                       Immediate                                      No                                        
+                                  Cascade Delete                                RESTRICT                                        
+                                  Cascade Update                                RESTRICT                                        
+                                 Exception Table                                                                                
+                                      Join Table                       AUTRE_UTILISATEUR                                        
+                                      Key Column                        CODE_UTILISATEUR                                        
+
+                               Referenced Column      AUTRE_UTILISATEUR.CODE_UTILISATEUR                                        
+
+
+Trigger CG$BIS_SUIVI_PERSONNEL_COMPETE                             * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                              No
+                                       On Insert                                                                             Yes
+                                       On Update                                                                              No
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                        BEGIN...
+Trigger CG$BIR_SUIVI_PERSONNEL_COMPETE                             * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                              No
+                                       On Insert                                                                             Yes
+                                       On Update                                                                              No
+                                           Level                                                                             ROW
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$AIS_SUIVI_PERSONNEL_COMPETE                             * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                           AFTER
+                                       On Delete                                                                              No
+                                       On Insert                                                                             Yes
+                                       On Update                                                                              No
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$BUS_SUIVI_PERSONNEL_COMPETE                             * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                              No
+                                       On Insert                                                                              No
+                                       On Update                                                                             Yes
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                        BEGIN...
+Trigger CG$BUR_SUIVI_PERSONNEL_COMPETE                             * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                              No
+                                       On Insert                                                                              No
+                                       On Update                                                                             Yes
+                                           Level                                                                             ROW
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$BDR_SUIVI_PERSONNEL_COMPETE                             * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                             Yes
+                                       On Insert                                                                              No
+                                       On Update                                                                              No
+                                           Level                                                                             ROW
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$ADS_SUIVI_PERSONNEL_COMPETE                             * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                           AFTER
+                                       On Delete                                                                             Yes
+                                       On Insert                                                                              No
+                                       On Update                                                                              No
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$AUS_SUIVI_PERSONNEL_COMPETE                             * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                           AFTER
+                                       On Delete                                                                              No
+                                       On Insert                                                                              No
+                                       On Update                                                                             Yes
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                      DECLARE...
+Trigger CG$BDS_SUIVI_PERSONNEL_COMPETE                             * NOT IN REPOSITORY *                                         ***
+                                         Enabled                                                                             Yes
+                                    Execute Time                                                                          BEFORE
+                                       On Delete                                                                             Yes
+                                       On Insert                                                                              No
+                                       On Update                                                                              No
+                                           Level                                                                       STATEMENT
+                                       New Alias                                                                             NEW
+                                       Old Alias                                                                             OLD
+                                            When                                                                                
+                                     PL/SQL Body                                                                        BEGIN...
+                                    Snapshot Log                                      No                                      No
+
+
+
+                                          -----------------------------------------------
+                                          Table SUIVI_PERSONNEL_COMPETENCE Differences: 3
+                                          -----------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+Object                                  Property                        Repository Value                          Database Value
+------                                  --------                        ----------------                          --------------
+Sequence SEQ_SPC                                                                - same -                                - same -
+                                           Start                                                                              22
+                                       Increment                                                                               1
+                                         Minimum                                                                               1
+                                         Maximum                                                     999999999999999999999999999
+                                           Cycle                                      No                                      No
+                                      Sort Order                                      No                                      No
+                                      Cache Size                                                                              20
+                                         Comment                                                                                
+                                                  -------------------------------
+                                                  Sequence SEQ_SPC Differences: 0
+                                                  -------------------------------
+
+
+====================================================================================================================================
+                                                       Total Differences: 12
+====================================================================================================================================

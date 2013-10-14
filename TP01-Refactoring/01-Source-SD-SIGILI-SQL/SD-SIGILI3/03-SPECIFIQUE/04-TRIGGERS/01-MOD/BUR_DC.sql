@@ -1,0 +1,8 @@
+create or replace TRIGGER BUR_DOMAINE_COMPETENCE BEFORE UPDATE ON DOMAINE_COMPETENCE
+FOR EACH ROW
+BEGIN
+  IF (:new.id_ue != 0) THEN
+    Select 'MET' into :New.TYPE_COMPETENCE from dual;
+  END IF;
+END;
+/
